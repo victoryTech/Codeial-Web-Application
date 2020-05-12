@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+
+        <link rel="stylesheet" href="/css/layout.css">
+        <%- style %>
+    
+    </head>
+
+    <body>
+        <!-- To use _header.ejs -->
+        <!-- </iosteram>  -->
+        <%- include('_header'); %>
+
+        <!-- here we call the body or main part to print from user_profile.ejs or which ever page we have to render -->
+        
+        <%- body %>
+        
+
+        <!-- To use _footer.ejs -->
+        <%- include('_footer'); %>
+
+        <%- script %>
+        
+    </body>
+</html>
