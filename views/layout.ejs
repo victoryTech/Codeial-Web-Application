@@ -5,6 +5,9 @@
         </title>
 
         <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        
         <%- style %>
     
     </head>
@@ -16,8 +19,9 @@
 
         <!-- here we call the body or main part to print from user_profile.ejs or which ever page we have to render -->
         
-        <%- body %>
-        
+        <main id="layout-main">
+           <%- body %>
+        </main>
 
         <!-- To use _footer.ejs -->
         <%- include('_footer'); %>
