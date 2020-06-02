@@ -11,9 +11,9 @@ module.exports.create = function(req, res){
                 user: req.user._id
             }, function(err, comment){
                 //handle error
-                if(err){
-                    console.log('Error in handling the comment', err);
-                }
+                // if(err){
+                //     console.log('Error in handling the comment', err);
+                // }
 
                 post.comments.push(comment);
                 post.save();

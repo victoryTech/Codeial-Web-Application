@@ -37,4 +37,4 @@ module.exports.home = function(req, res){
     })
 }
 
-// moduke.exports.actionName = function(req, res){}
+// module.exports.actionName = function(req, res){}
