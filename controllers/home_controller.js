@@ -21,15 +21,15 @@ module.exports.home = function(req, res){
 
     //populate the user of each post
     //to get info of user which having post in home
-    Post.find({})
-    .populate('user')
-    .populate({
-        path: 'comments',
-        populate: {
+    Post.find({})  // //here we are fining posts
+    .populate('user') //here we populate users of this post in post scshema
+    .populate({   //here we populate comments of this post in post scshema
+        path: 'comments', //now we are in comments schema
+        populate: { //here we are populating users of comments from comment schema now
             path: 'user'
         }
     })
-    .exec(function(err, posts){
+    .exec(function(err, posts){// this acts like normal callback function
         return res.render('home', {
             title: "Codeial | Home",
             posts:  posts
