@@ -1,32 +1,40 @@
 <html>
-    <head>
-        <title>
-            <%= title %>
-        </title>
 
-        <link rel="stylesheet" href="/css/layout.css">
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/css/footer.css">
-        
-        <%- style %>
-    
-    </head>
+<head>
+    <title>
+        <%= title %>
+    </title>
 
-    <body>
-        <!-- To use _header.ejs -->
-        <!-- </iosteram>  -->
-        <%- include('_header'); %>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
-        <!-- here we call the body or main part to print from user_profile.ejs or which ever page we have to render -->
-        
-        <main id="layout-main">
-           <%- body %>
-        </main>
+    <%- style %>
 
-        <!-- To use _footer.ejs -->
-        <%- include('_footer'); %>
+</head>
 
-        <%- script %>
-        
-    </body>
+<body>
+    <!-- To use _header.ejs -->
+    <!-- </iosteram>  -->
+    <%- include('_header'); %>
+
+        <% if(flash.success && flash.success.length > 0){ %>
+            <h5>
+                <%= flash.success %>
+            </h5>
+            <% } %>
+
+                <!-- here we call the body or main part to print from user_profile.ejs or which ever page we have to render -->
+
+                <main id="layout-main">
+                    <%- body %>
+                </main>
+
+                <!-- To use _footer.ejs -->
+                <%- include('_footer'); %>
+
+                    <%- script %>
+
+</body>
+
 </html>
