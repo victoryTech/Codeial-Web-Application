@@ -13,7 +13,8 @@ let transporter = nodemailer.createTransport({
         //user: 'alchemy.cn18',
         //pass: 'codingninjas'
         user: 'biekymahato@gmail.com',
-        pass: '123456' // password should be valid
+        // your correct password
+        pass: '12345'
     }
 });
 
