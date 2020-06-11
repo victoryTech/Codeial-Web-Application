@@ -9,12 +9,9 @@ let transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-        //this comment part is given mail and pass
-        //user: 'alchemy.cn18',
-        //pass: 'codingninjas'
-        user: 'biekymahato@gmail.com',
-        // your correct password
-        pass: '12345'
+        // it should be your email id and password
+        user: 'alchemy.cn18',
+        pass: 'codingninjas'
     }
 });
 
@@ -25,7 +22,7 @@ let renderTemplate = (data, relativePath) => {
         path.join(__dirname, '../views/mailers', relativePath),
         data,
         function(err, template) {
-            if (err) { console.log('error in rendering template'); return }
+            if (err) { console.log('error in rendering template', err); return }
 
             mailHTML = template;
         }
