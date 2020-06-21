@@ -10,8 +10,8 @@ let transporter = nodemailer.createTransport({
     secure: false,
     auth: {
         // it should be your email id and password
-        user: 'alchemy.cn18',
-        pass: 'codingninjas'
+        user: 'biekymahato@gmail.com',
+        pass: '12345678'
     }
 });
 
