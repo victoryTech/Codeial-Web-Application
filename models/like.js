@@ -6,6 +6,7 @@ const likeSchema = new mongoose.Schema({
         type: mongoose.Schema.ObjectId
     },
     // this defines the object id of the liked object
+    // this is
     likeable: {
         type: mongoose.Schema.ObjectId,
         require: true,
@@ -23,4 +24,5 @@ const likeSchema = new mongoose.Schema({
 
 
 const Like = mongoose.model('Like', likeSchema);
+
 module.exports = Like;
