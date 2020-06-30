@@ -1,2 +1,2 @@
 # Codeial
-# Building a type Social App and learning backend web development in Nodejs and MongoDB
+# Its a social media web application basically which consists of all the code along with the steps written in comments implementing all the basic to advanced functionalities like setting up express server , connecting with database , working with api's , converting code to AJAX , chatting bot , Setting up schemas etc.
